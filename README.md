@@ -29,6 +29,10 @@ SnabbTech is a dynamic and modern React website created using the Vite build too
 - **Home Content:** Rich content providing valuable information and resources.
 
 - **Footer:** A footer section with contact information and quick links for seamless navigation.
+- 
+**Registration Form:** A user-friendly registration form allowing users to sign up for SnabbTech services.
+
+
 
 ## Technologies Used
 

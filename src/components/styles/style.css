@@ -1,0 +1,83 @@
+#mobile-navbar{
+    position:absolute;
+    top:20%;
+    z-index: 9999;
+    right:0px;
+    width: 60%;
+    background-color: white;
+    height: 100vh;
+    padding: 10px;
+    
+}
+
+#mobile-navbar > ul{
+   display: flex;
+   flex-direction: column;
+   border-radius:80px 80px 0px 0px;
+   width: 100%;
+   justify-content: center;
+   border: 1px solid var(--title-color);
+   height: inherit;
+   padding: 0px;
+   
+}
+
+#mobile-navbar > ul > li {
+   
+    width: 100%;
+    text-align:center;
+    margin-bottom:15px;
+    font-family: BIZ UDPGothic;
+    font-weight:300;
+    font-size: smaller;
+
+    
+}
+#mobile-navbar > ul > li:hover{
+    color:var(--title-color)
+}
+
+
+
+/* sign in starts here */
+#signIn .left-part{
+   position: relative; 
+}
+.left-part .welcomePanda{
+    position: absolute;
+    top: 10px;
+    z-index: 11;
+    color:#F5F1ED;
+    padding: 0px 10px;
+}
+#signIn .formContainer{
+    border-radius:60px 60px 0px 0px;
+    display: flex;
+    flex-direction:column;
+    /* align-items:center; */
+    padding: 10px 15px;
+
+}
+.min5{
+    color:var(--title-color)
+}
+#signIn .footer{
+color: #ACB5BD;
+font-family: Roboto;
+}
+
+
+#signIn input:focus{
+  /* box-shadow: none; */
+  box-shadow: 0 0 5px rgba(169, 84, 84, 0.5);
+  border:1px solid var(--title-color);
+}
+#signIn input:checked{
+    background-color: var(--title-color);
+}
+
+#signIn button:focus{
+    background-color: var(--title-color);
+    color: white;
+    box-shadow: none;
+}

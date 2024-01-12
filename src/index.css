@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap");
+
+:root {
+  --title-color: #a95454;
+  --text-color: #1f1f1f;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: var(--text-color);
+  font-style: normal;
+  font-family: "Jost", sans-serif;
+}
+
+/* header starts here */
+
+.title {
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+.h3,
+.h2,
+.h1 {
+  font-weight: 400;
+  line-height: 135.2%;
+}
+a {
+  color: var(--title-color);
+  font-size: small;
+}
+.brand > a{
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth > div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.auth > div > a {
+  color: var(--title-color);
+  font-size: small;
+}
+
+.header-text {
+  font-family: BIZ UDPGothic;
+  font-size: 39.231px;
+  font-style: normal;
+  font-weight: 350;
+  text-align: center;
+  align-items: center;
+}
+
+.A {
+  border: 2px solid;
+  padding: 8px 5px;
+  border-radius: 20px 20px 0px 0px;
+  font-size: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-text-star {
+  fill: #a95454;
+  margin-top: auto;
+}
+
+.nav-links {
+  font-family: BIZ UDPGothic;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 158.7%;
+  letter-spacing: -1.5px;
+  text-transform: capitalize;
+}
+.nav-links:hover {
+  color: var(--title-color);
+}
+/* header ends here */
+
+/* home-Banner starts here */
+#home-banner {
+  height: 100%;
+}
+
+#home-banner div:nth-child(1),
+#home-banner div:nth-child(3) {
+  opacity: 0.19;
+}
+
+#home-banner #img-container {
+  height: 350px;
+  position: relative;
+}
+#home-banner .h3 {
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+#home-banner #img-container > img {
+  position: absolute;
+}
+#home-banner img[alt="banner1"] {
+  top: 20px;
+  left: 10px;
+  z-index: 1;
+}
+#home-banner img[alt="banner2"] {
+  top: 0px;
+  right: 15px;
+  z-index: 0;
+}
+
+/* home-Banner-ends here */
+
+/* mission-part starts here */
+#mission-part > div {
+  width: 180px;
+  height: 180px;
+  border: 1px solid;
+  text-align: center;
+  border-radius: 55px 55px 0px 0px;
+  border: 1px solid var(--title-color);
+  padding: 7px 5px;
+}
+/* mission-parts ends here */
+
+/* Functinalities starts here */
+
+.function-part > .row > div {
+  height: 500px;
+}
+.func-item-container > div {
+  height: inherit;
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.func-items {
+  flex-basis: 150px;
+  height: 80px;
+  text-align: center;
+  border: 1px solid var(--title-color);
+  border-radius: 55px 55px 0px 0px;
+  padding: 10px 0px;
+}
+
+.func-items > div {
+  width: 150px;
+  height: 180px;
+  border: 1px solid gainsboro;
+  margin-top: 20px;
+  border-top: none;
+  border-radius: 10px 10px 0px 0px;
+  background: white;
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .function-part > .row > div {
+    height: 750px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .func-item-container > div {
+    justify-content: space-between;
+  }
+
+  .function-part .row > div:nth-child(2) {
+    height: 400px;
+  }
+  .activities-part li > span {
+    font-size: large;
+  }
+}
+@media screen and (max-width: 376px) {
+  .func-item-container {
+    padding: 0px;
+  }
+  .activities-part li > span {
+    font-size: small !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .function-part > .row > div {
+    height: 1300px;
+  }
+  .func-item-container > div {
+    justify-content: center;
+    gap: 1px;
+  }
+  .activities-part li > span {
+    font-size: small !important;
+  }
+}
+
+/* Decouvres-starts here */
+
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: gainsboro;
+  border-radius: 2px;
+  position: relative;
+}
+.lines > .line:nth-child(1) {
+  background-image: linear-gradient(
+    to right,
+    var(--text-color) 50%,
+    gainsboro 50%
+  );
+}
+
+.decouvrez-part .content {
+  font-size: x-large;
+  font-weight: 500;
+}
+.Omar-Ndiaye {
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-size: small;
+}
+
+/* Decouvres-ends-here */
+
+/* Voir-part starts here */
+.voir-part .row > div {
+  height: 350px;
+}
+
+.voir-part .img-container > div {
+  flex-basis: 25%;
+}
+
+.img-container .img-1 {
+  height: 300px;
+}
+.img-container .img-2 {
+  height: 280px;
+  margin-bottom: 35px;
+}
+.img-container .img-3 {
+  height: 250px;
+  margin-bottom: 35px;
+}
+
+.voir-part img {
+  height: 100%;
+  border-radius: 65px 65px 0px 0px;
+}
+
+/* voir parts ends here */
+
+/* offfres starts here */
+
+.offres-part .soft_engi,
+.risk_analyst {
+  flex: 1;
+  border-radius: 100px;
+  padding: 7px 10px;
+  text-align: center;
+}
+.risk_analyst .inner-div,
+.soft_engi .inner-div {
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.inner-div > div {
+  flex: 1;
+}
+
+.inner-div a {
+  color: var(--text-color);
+  font-size: small;
+}
+.soft_engi button,
+.risk_analyst button {
+  margin-top: 20px;
+}
+
+.soft_engi .madagascar,
+.risk_analyst .madagascar {
+  color: var(--title-color);
+}
+/* Offress ends here */
+
+/* events starts here */
+.event-details > li > span {
+  font-family: BIZ UDPGothic;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+}
+.event-details > li > span:nth-child(2) {
+  color: var(--title-color);
+}
+
+/* events ends here */
+
+/* founder starts here */
+
+#founder-part img,
+.founder-content {
+  border-radius: 50px 50px 0px 0px;
+  text-align: justify;
+}
+
+.founder-content {
+  /* height:250px; */
+  text-align: justify;
+  padding: 20px 10px 0px 10px;
+}
+
+#founder-part .founder-name {
+  color: var(--title-color);
+  font-size: small;
+  font-weight: bold;
+}
+#founder-part .name-title {
+  font-size: small;
+}
+/* founder ends here */
+
+/* activites starts here */
+.activities-part li > span {
+  font-size: x-large;
+  /* font-weight: bold; */
+}
+.activities-part li > span:hover {
+  color: var(--title-color);
+}
+
+/* activitities ends here */
+
+/* home-content starts here */
+.home-content {
+  font-family: Jost;
+}
+
+/* footer starts here */
+.footer .footer-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer li {
+  list-style: disc;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+.footer .container-fluid {
+  background-color: rgb(252, 252, 252);
+  padding: 10px;
+}
+
+/* footer ends here */
